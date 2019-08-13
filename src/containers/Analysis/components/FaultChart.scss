@@ -1,0 +1,399 @@
+.mainBody {
+  min-height: 420px;
+  .mainCard {
+    //padding: 10px 15px;
+    .faultCard {
+      .extraWrap {
+        line-height: 60px;
+        padding-right: 24px;
+        .opt {
+          display: inline-block;
+          margin-right: 24px;
+          a {
+            color: #fff;
+            margin-left: 24px;
+          }
+          .currentDate {
+            color: #1890ff;
+          }
+        }
+        .picker {
+          width: 256px;
+        }
+      }
+      .searchBar {
+        padding-bottom: 20px;
+        color: #fff;
+        .searchBtn {
+          float: right;
+        }
+        .rangePicker {
+          float: right; 
+          margin-right: 24px;
+        }
+        .label {
+          display: block;
+          height: 32px; 
+          line-height: 32px; 
+          float: right;
+        }
+        .select {
+          float:right;
+          margin-right: 24px; 
+          min-width: 100px;
+        }
+      }
+      table {
+        height: 28vh;
+      }
+    }
+  }
+}
+.mainBody :global(.ant-tabs .ant-tabs-large-bar .ant-tabs-tab) {
+  padding: 18px;
+}
+.mainBody :global(.ant-tabs-bar) {
+  padding-left: 16px;
+}
+.mainBody :global(.ant-card) {
+  background: none;
+}
+.mainBody :global(.ant-card-bordered) {
+  border: 1px solid #2e2ef1;
+  //margin-bottom: 60px;
+}
+.mainBody :global(.ant-tabs-bar) {
+  border-bottom: 1px solid #2e2ef1;
+}
+.mainBody :global(.ant-tabs .ant-tabs-large-bar .ant-tabs-tab) {
+  color: #fff;
+}
+.mainBody :global(.ant-tabs .ant-tabs-large-bar .ant-tabs-tab-active.ant-tabs-tab) {
+  color: #09aff1;
+}
+.mainBody :global(.ant-tabs-ink-bar) {
+  background-color: #2e2ef1;
+}
+.mainBody :global(.ant-tabs .ant-tabs-large-bar .ant-tabs-tab:hover) {
+  color: #09aff1;
+}
+.mainBody :global(.ant-table-thead > tr ) {
+  background: none;
+}
+.mainBody :global(.ant-table-thead > tr > th) {
+  color: #fff;
+  border-bottom: 1px solid #e8e8e8;
+}
+.mainBody :global(.ant-table-thead > tr > th.ant-table-column-sort) {
+  background: none;
+}
+.mainBody :global(.ant-table-thead > tr > th.ant-table-column-has-actions.ant-table-column-has-sorters:hover) {
+  background: none;
+}
+.mainBody :global(.ant-table-tbody > tr > td) {
+  border-bottom: 1px solid #e8e8e8;
+  color: #fff;
+}
+.mainBody :global(.ant-table-tbody > tr:hover:not(.ant-table-expanded-row) > td) {
+  background: none;
+}
+.mainBody :global(.ant-empty-normal .ant-empty-image) {
+  display: none;
+}
+.mainBody :global(.ant-table-placeholder) {
+  background: none;
+  border-bottom: 1px solid #2e2ef1;
+}
+.mainBody :global(.ant-empty-normal) {
+  color: #09aff1;
+}
+.mainBody :global(.ant-pagination-disabled a) {
+  color: rgba(255,255,255,0.8);
+}
+.mainBody :global(.ant-pagination-disabled:hover a) {
+  color: rgba(255,255,255,0.8);
+}
+.mainBody :global(.ant-pagination-disabled:focus a) {
+  color: rgba(255,255,255,0.8);
+}
+.mainBody :global(.ant-pagination-disabled .ant-pagination-item-link) {
+  color: rgba(255,255,255,0.8);
+}
+.mainBody :global(.ant-pagination-disabled:hover .ant-pagination-item-link) {
+  color: rgba(255,255,255,0.8);
+}
+.mainBody :global(.ant-pagination-disabled:focus .ant-pagination-item-link) {
+  color: rgba(255,255,255,0.8);
+}
+.mainBody :global(.ant-pagination-prev a) {
+  color: rgba(255,255,255,0.8);
+}
+.mainBody :global(.ant-pagination-next a) {
+  color: rgba(255,255,255,0.8);
+}
+.mainBody :global(.ant-pagination-item a) {
+  color: rgba(255,255,255,0.8);
+}
+.mainBody :global(.ant-pagination-item:focus a) {
+  color: #1890ff;
+}
+.mainBody :global(.ant-pagination-item:hover a) {
+  color: #1890ff;
+}
+.mainBody :global(.ant-pagination-item-active a) {
+  color: #1890ff;
+}
+.mainBody :global(.ant-pagination-jump-prev .ant-pagination-item-container .ant-pagination-item-ellipsis) {
+  color: rgba(255,255,255,0.8);
+}
+.mainBody :global(.ant-pagination-jump-next .ant-pagination-item-container .ant-pagination-item-ellipsis) {
+  color: rgba(255,255,255,0.8);
+}
+.mainBody :global(.ant-pagination-item-active) {
+  // border-color: transparent;
+  background: transparent;
+}
+body :global(.ant-calendar-picker-container) {
+  color: rgba(255,255,255, 0.65);
+}
+body :global(.ant-calendar) {
+  border: 1px solid #2e2ef1;
+  background-color: #041035;
+}
+body :global(.ant-calendar-input-wrap) {
+    border-bottom: 1px solid #2e2ef1;
+}
+body :global(.ant-calendar-range .ant-calendar-input) {
+  color: rgba(255,255,255,.65);
+  background-color: #041035;
+}
+body :global(.ant-calendar-range .ant-calendar-time-picker-input) {
+  color: rgba(255,255,255,.65);
+  background-color: #041035;
+}
+body :global(.ant-calendar-header .ant-calendar-prev-century-btn) {
+  color: rgba(255, 255, 255, 0.45);
+}
+body :global(.ant-calendar-header .ant-calendar-prev-decade-btn) {
+  color: rgba(255, 255, 255, 0.45);
+}
+body :global(.ant-calendar-header .ant-calendar-prev-month-btn) {
+  color: rgba(255, 255, 255, 0.45);
+}
+body :global(.ant-calendar-header .ant-calendar-next-month-btn) {
+  color: rgba(255, 255, 255, 0.45);
+}
+body :global(.ant-calendar-header .ant-calendar-prev-year-btn) {
+  color: rgba(255, 255, 255, 0.45);
+}
+body :global(.ant-calendar-header .ant-calendar-next-year-btn) {
+  color: rgba(255, 255, 255, 0.45);
+}
+body :global(.ant-calendar-header .ant-calendar-century-select) {
+  color: rgba(255, 255, 255, 0.85);
+}
+body :global(.ant-calendar-header .ant-calendar-decade-select) {
+  color: rgba(255, 255, 255, 0.85);
+}
+body :global(.ant-calendar-header .ant-calendar-year-select) {
+  color: rgba(255, 255, 255, 0.85);
+}
+body :global(.ant-calendar-header .ant-calendar-month-select) {
+  color: rgba(255, 255, 255, 0.85);
+}
+body :global(.ant-calendar-year-panel-header .ant-calendar-year-panel-prev-century-btn) {
+  color: rgba(255, 255, 255, 0.45);
+}
+body :global(.ant-calendar-year-panel-header .ant-calendar-year-panel-next-century-btn) {
+  color: rgba(255, 255, 255, 0.45);
+}
+body :global(.ant-calendar-year-panel-header .ant-calendar-year-panel-prev-decade-btn) {
+  color: rgba(255, 255, 255, 0.45);
+}
+body :global(.ant-calendar-year-panel-header .ant-calendar-year-panel-next-decade-btn) {
+  color: rgba(255, 255, 255, 0.45);
+}
+body :global(.ant-calendar-year-panel-header .ant-calendar-year-panel-prev-month-btn) {
+  color: rgba(255, 255, 255, 0.45);
+}
+body :global(.ant-calendar-year-panel-header .ant-calendar-year-panel-next-month-btn) {
+  color: rgba(255, 255, 255, 0.45);
+}
+body :global(.ant-calendar-year-panel-header .ant-calendar-year-panel-prev-year-btn) {
+  color: rgba(255, 255, 255, 0.45);
+}
+body :global(.ant-calendar-year-panel-header .ant-calendar-year-panel-next-year-btn) {
+  color: rgba(255, 255, 255, 0.45);
+}
+body :global(.ant-calendar-year-panel-header .ant-calendar-year-panel-century-select) {
+  color: rgba(255, 255, 255, 0.85);
+}
+body :global(.ant-calendar-year-panel-header .ant-calendar-year-panel-decade-select) {
+  color: rgba(255, 255, 255, 0.85);
+}
+body :global(.ant-calendar-year-panel-header .ant-calendar-year-panel-year-select) {
+  color: rgba(255, 255, 255, 0.85);
+}
+body :global(.ant-calendar-year-panel-header .ant-calendar-year-panel-month-select) {
+  color: rgba(255, 255, 255, 0.85);
+}
+body :global(.ant-calendar-range .ant-calendar-body) {
+  border-top: 1px solid #2e2ef1;
+}
+body :global(.ant-calendar-range .ant-calendar-month-panel-body) {
+  border-top: 1px solid #2e2ef1;
+}
+body :global(.ant-calendar-range .ant-calendar-year-panel-body) {
+  border-top: 1px solid #2e2ef1;
+}
+body :global(.ant-calendar-last-month-cell .ant-calendar-date) {
+  color: rgba(255, 255, 255, 0.25);
+}
+body :global(.ant-calendar-next-month-btn-day .ant-calendar-date) {
+  color: rgba(255, 255, 255, 0.25);
+}
+body :global(.ant-calendar-date) {
+  color: rgba(255, 255, 255, 0.65);
+}
+body :global(.ant-calendar-date:hover) {
+  background: #1890ff;
+}
+body :global(.ant-calendar-range .ant-calendar-in-range-cell::before) {
+  background: steelblue;
+}
+body :global(.ant-calendar-footer) {
+  border-top: 1px solid #2e2ef1;
+}
+body :global(.ant-calendar-time-picker) {
+  background-color: #041035;
+}
+body :global(.ant-calendar-range-left .ant-calendar-time-picker-inner) {
+  border-right: 1px solid #2e2ef1;
+}
+body :global(.ant-calendar-range.ant-calendar-time .ant-calendar-time-picker-combobox) {
+  background-color: #041035;
+  border-top: 1px solid #2e2ef1;
+}
+body :global(li.ant-calendar-time-picker-select-option-selected) {
+  background: #1890ff;
+}
+body :global(.ant-calendar-time-picker-select li:hover) {
+  background: #40a9ff;
+}
+body :global(.ant-calendar-year-panel-year) {
+  color: rgba(255, 255, 255, 0.65);
+}
+body :global(.ant-calendar-header a:hover) {
+  color: #fff;
+}
+body :global(.ant-calendar-year-panel-year:hover) {
+  background: #1890ff;
+}
+body :global(.ant-calendar-decade-panel-header .ant-calendar-decade-panel-prev-century-btn) {
+  color: rgba(255, 255, 255, 0.45);
+}
+body :global(.ant-calendar-decade-panel-header .ant-calendar-decade-panel-next-century-btn) {
+  color: rgba(255, 255, 255, 0.45);
+}
+body :global(.ant-calendar-decade-panel-header .ant-calendar-decade-panel-prev-decade-btn) {
+  color: rgba(255, 255, 255, 0.45);
+}
+body :global(.ant-calendar-decade-panel-header .ant-calendar-decade-panel-next-decade-btn) {
+  color: rgba(255, 255, 255, 0.45);
+}
+body :global(.ant-calendar-decade-panel-header .ant-calendar-decade-panel-prev-month-btn) {
+  color: rgba(255, 255, 255, 0.45);
+}
+body :global(.ant-calendar-decade-panel-header .ant-calendar-decade-panel-next-month-btn) {
+  color: rgba(255, 255, 255, 0.45);
+}
+body :global(.ant-calendar-decade-panel-header .ant-calendar-decade-panel-prev-year-btn) {
+  color: rgba(255, 255, 255, 0.45);
+}
+body :global(.ant-calendar-decade-panel-header .ant-calendar-decade-panel-next-year-btn) {
+  color: rgba(255, 255, 255, 0.45);
+}
+body :global(.ant-calendar-decade-panel-decade) {
+  color: rgba(255, 255, 255, 0.65);
+}
+body :global(.ant-calendar-decade-panel-decade:hover) {
+  background: #1890ff;
+}
+body :global(.ant-calendar-decade-panel-header) {
+  border-bottom: 1px solid #2e2ef1;
+}
+body :global(.ant-calendar-month-panel) {
+  background: #041035;
+}
+body :global(.ant-calendar-month-panel-month) {
+  color: rgba(255, 255, 255, 0.65);
+}
+body :global(.ant-calendar-month-panel-header .ant-calendar-month-panel-prev-century-btn) {
+  color: rgba(255, 255, 255, 0.45);
+}
+body :global(.ant-calendar-month-panel-header .ant-calendar-month-panel-century-select) {
+  color: rgba(255, 255, 255, 0.85);
+}
+body :global(.ant-calendar-month-panel-header .ant-calendar-month-panel-decade-select) {
+  color: rgba(255, 255, 255, 0.85);
+}
+body :global(.ant-calendar-month-panel-header .ant-calendar-month-panel-year-select) {
+  color: rgba(255, 255, 255, 0.85);
+}
+body :global(.ant-calendar-month-panel-header .ant-calendar-month-panel-month-select) {
+  color: rgba(255, 255, 255, 0.85);
+}
+body :global(.ant-calendar-month-panel-cell-disabled .ant-calendar-month-panel-month) {
+  color: rgba(255, 255, 255, 0.25);
+  background: transparent;
+}
+body :global(.ant-calendar-month-panel-cell-disabled .ant-calendar-month-panel-month:hover) {
+  color: rgba(255, 255, 255, 0.25);
+  background: transparent;
+}
+body :global(.ant-calendar-header a:hover) {
+  color: #fff;
+}
+body :global(.ant-calendar-month-panel-month:hover) {
+  background: #1890ff;
+}
+body :global(.ant-input) {
+  background-color: transparent;
+  border: 1px solid #2e2ef1;
+  color: rgba(255, 255, 255, 0.65);
+}
+body :global(.ant-select-selection) {
+  background-color: transparent;
+  border: 1px solid #2e2ef1;
+  color: rgba(255,255,255,0.65);
+}
+body :global(.ant-select-arrow) {
+  color: rgba(255,255,255,0.25);
+}
+body :global(.ant-select-dropdown) {
+  color: rgba(255, 255, 255, 0.65);
+  border: 1px solid #2e2ef1;
+  background: #041035;
+}
+body :global(.ant-select-dropdown-menu-item:hover) {
+  background-color: #1890ff;
+  color: #fff;
+}
+body :global(.ant-select-dropdown-menu-item) {
+  color: rgba(255,255,255,0.65)
+}
+body :global(.ant-select-dropdown-menu-item-active) {
+  background-color: #1890ff;
+}
+body :global(.ant-calendar-range-picker-separator) {
+  color: rgba(255, 255, 255, 0.45);
+}
+body :global(.ant-calendar-year-panel) {
+  background: #041035;
+}
+body :global(.ant-calendar-decade-panel) {
+  background: #041035;
+}
+body :global(.ant-select-dropdown-menu-item-selected) {
+  background-color: #1890ff;
+}

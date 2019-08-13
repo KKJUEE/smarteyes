@@ -1,0 +1,63 @@
+html,
+body {
+    /*width: 100%;*/
+    /* height: 100%; */
+    margin: 0;
+    padding: 0;
+    font-size: 16px;
+    -webkit-tap-highlight-color: rgba(255,0,0,0);
+    background: url('./components/backGround.png') no-repeat center center fixed;
+    background-size:100% 100%;
+    /*overflow-x: hidden;*/
+}
+* {
+    /* box-sizing: border-box; */
+    padding: 0;
+    margin: 0;
+}
+canvas {
+    display: block;
+}
+p {
+    margin: 0;
+}
+
+.router-appear {
+    opacity: 0;
+    transition: all 3s ease;
+}
+
+.router-appear.router-appear-active {
+    opacity: 1;
+}
+
+.router-enter {
+    opacity: 0;
+    transition: all 3s ease;
+}
+
+.router-enter.router-enter-active {
+    opacity: 1;
+}
+
+.router-leave {
+    opacity: 0;
+    transition: all 3s ease;
+}
+
+.router-leave.router-leave-active {
+    opacity: 1;
+}
+
+::-ms-clear {
+    display: none;
+}
+
+.iconfont {
+    font-family: "iconfont" !important;
+    font-size: 16px;
+    font-style: normal;
+    -webkit-font-smoothing: antialiased;
+    -webkit-text-stroke-width: 0.2px;
+    -moz-osx-font-smoothing: grayscale;
+}

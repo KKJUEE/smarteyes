@@ -1,0 +1,26 @@
+$fontFamily: "Roboto-Regular";
+$fontColor: #09aff1;
+$fontColorActive: #07fbe6f3;
+.wrapper {
+  height: 100px;
+  width: 100%;
+  top: 0;
+  background: url('../../components/head.png') no-repeat;
+  background-size:100% 100%;
+  position: fixed;
+  z-index: 9998;
+  transition: top 1s ease; // dashboard full screen switch
+  img {
+    margin-top: 30px;
+  }
+  .left {
+    padding: 5px 0 0 63px;
+  }
+  .middle {
+    color: white;
+    text-align: center;
+    line-height: 45px;
+    font-family: 'MFYueYuan_Noncommercial-Regular';
+    font-size: 32px;
+  }
+}
