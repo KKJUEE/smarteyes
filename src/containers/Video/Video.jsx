@@ -291,7 +291,10 @@ class Video extends React.Component {
         </Row>
         <Row>
           <Col xl={12} lg={24} md={24} sm={24} xs={24} className={`${styles.cardTempalte} ${styles.cardThird}`}>
-          <Card/>
+          {/*<Card/>*/}
+            <div className={styles.cardThirdContent}>
+
+            </div>
           </Col>
           <Col xl={12} lg={24} md={24} sm={24} xs={24} className={styles.charts}>
             <Content className={styles.wrapperAnalysis}>

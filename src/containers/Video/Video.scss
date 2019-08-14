@@ -21,7 +21,7 @@
 
 .cardFirstContent {
     margin: 0 20px;
-    height: 456px;
+    min-height: 656px;
     padding: 20px;
     border: 1px solid #2e2ef1;
     color: #09aff1;
@@ -30,6 +30,19 @@
     background: transparent;
     border-radius: 2px 2px 0 0;
     zoom: 1;
+}
+
+.cardThirdContent {
+    min-height: 618px;
+    padding: 20px;
+    border: 1px solid #2e2ef1;
+    color: #09aff1;
+    font-weight: 500;
+    font-size: 16px;
+    background: transparent;
+    border-radius: 2px 2px 0 0;
+    zoom: 1;
+    margin: 0 20px;
 }
 
 .wrapperAnalysis {
@@ -67,7 +80,7 @@
         border: 1px solid #2e2ef1;
         background-color:transparent;
         height: 35vh;
-        min-height: 400px;
+        min-height: 600px;
         flex: 2;
         padding: 5px;
         .imgWap {

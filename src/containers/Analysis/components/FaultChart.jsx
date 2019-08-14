@@ -446,7 +446,7 @@ class FaultChart extends React.Component {
                       <Row gutter={16}>
                         <Col span={24} style={{padding: '0 32px'}}>
                           <Spin spinning={loading.chart}>
-                            <Chart height={360} data={data} forceFit scale={scale}>
+                            <Chart height={540} data={data} forceFit scale={scale}>
                               <Legend
                                 textStyle={{ fill: 'white', fontSize: 12 }}
                               />
