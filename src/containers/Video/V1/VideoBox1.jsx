@@ -5,6 +5,7 @@ import styles from '../Video.scss'
 import zh_CN from '../../../i18n/zh_CN'
 import bg from '../../../components/backGround.png'
 import videojs from 'video.js';
+import 'video.js/dist/video-js.min.css';
 
 const { Content } = Layout;
 
@@ -43,11 +44,10 @@ class VideoBox1 extends React.Component {
   render() {
     const player1 = this.state.player1
     const videoImg = this.props.videoBox1Data.img
-
     return (
       <Content className={styles.wrapper} style={{ paddingTop: 75, paddingBottom: 15 }}>
         <Row gutter={16}>
-          <Col xl={9} lg={24} md={24} sm={24} xs={24}>
+          <Col xl={14} lg={24} md={24} sm={24} xs={24}>
             <div className={styles.cardTitle}>
               <div className={styles.cardText}>{zh_CN.ChannelOne}</div>
             </div>
@@ -65,13 +65,13 @@ class VideoBox1 extends React.Component {
               </video>
             </div>
           </Col>
-          <Col xl={15} lg={24} md={24} sm={24} xs={24}>
+          <Col xl={10} lg={24} md={24} sm={24} xs={24}>
             <div className={styles.cardTitle}>
               <div className={styles.cardText}>{zh_CN.RealTimeFaultData}</div>
             </div>
             <div className={styles.cardContent}>
               <Row gutter={16}>
-                <Col span={12}>
+                <Col span={10}>
                   <table>
                     <thead>
                       <tr>

@@ -44,7 +44,7 @@ class Donut extends React.Component {
             <Row>
                 <Col span={10}>
                     <Chart
-                        height={220}
+                        height={290}
                         data={dv}
                         scale={cols}
                         padding={[80, 20, 20, 10]}
@@ -101,7 +101,7 @@ class Donut extends React.Component {
                 <Col span={2}></Col>
                 <Col span={10}>
                     <Chart
-                        height={220}
+                        height={290}
                         data={dv2}
                         scale={cols}
                         padding={[80, 20, 20, 10]}

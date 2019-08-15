@@ -13,14 +13,12 @@ import Gradient from '../Video/Gradient/Gradient'
 import Map from '../Video/Map/Map'
 
 import { clearTimer, getChannelList } from '../../actions/apps'
-import {Col, Layout, Row} from 'antd';
+import { Col, Row } from 'antd';
 import { API_HISTORYERROR_STATISTIC_PERIOD } from '../../constants/API'
 import zh_CN from '../../i18n/zh_CN'
 // css
 import styles from './Video.scss'
-import FaultChart from "../Analysis/components/FaultChart";
-import Card from "./Card/Card";
-const Content = Layout;
+
 class Video extends React.Component {
   constructor(props) {
     super(props)
@@ -275,35 +273,16 @@ class Video extends React.Component {
     return (
       <div>
         <Header />
-
         <Row>
-          <Col xl={12} lg={24} md={24} sm={24} xs={24} className={`${styles.cardTempalte} ${styles.cardFirst}`}>
-            {/*<Card/>*/}
-            <div className={styles.cardFirstContent}>
-
-            </div>
-          </Col>
-          <Col xl={12} lg={24} md={24} sm={24} xs={24} className={styles.camera}>
+          <Col xl={16} lg={24} md={24} sm={24} xs={24}>
             <VideoBox1 videoBox1Data={this.state.box1} />
-            {/*<VideoBox2 videoBox2Data={this.state.box2} />*/}
+            <VideoBox2 videoBox2Data={this.state.box2} />
           </Col>
-
-        </Row>
-        <Row>
-          <Col xl={12} lg={24} md={24} sm={24} xs={24} className={`${styles.cardTempalte} ${styles.cardThird}`}>
-          {/*<Card/>*/}
-            <div className={styles.cardThirdContent}>
-
-            </div>
+          <Col xl={8} lg={24} md={24} sm={24} xs={24} className={styles.charts}>
+            <Donut data={chart} />
+            <Gradient yAdd={yAdd}/>
+            <Map />
           </Col>
-          <Col xl={12} lg={24} md={24} sm={24} xs={24} className={styles.charts}>
-            <Content className={styles.wrapperAnalysis}>
-              <FaultChart />
-            </Content>
-            {/*<Donut data={chart} />*/}
-            {/*<Gradient yAdd={yAdd}/>*/}
-            {/*<Map />*/}
-          </Col>64
         </Row>
         <Foot />
       </div>

@@ -70,11 +70,9 @@ class FaultChart extends React.Component {
       },
       camIds          : [{                       // camId 集合
         camId: 1, title: zh_CN.video1,
-      },
-      //   {
-      //   camId: 2, title: zh_CN.video2,
-      // }
-      ],
+      }, {
+        camId: 2, title: zh_CN.video2,
+      }],                            
       currentCamId: 1,                           // 当前 tab 选中的 camId
     };
   }
@@ -446,7 +444,7 @@ class FaultChart extends React.Component {
                       <Row gutter={16}>
                         <Col span={24} style={{padding: '0 32px'}}>
                           <Spin spinning={loading.chart}>
-                            <Chart height={540} data={data} forceFit scale={scale}>
+                            <Chart height={600} data={data} forceFit scale={scale}>
                               <Legend
                                 textStyle={{ fill: 'white', fontSize: 12 }}
                               />
@@ -503,19 +501,19 @@ class FaultChart extends React.Component {
                             </Chart>
                           </Spin>
                         </Col>
-                        {/*<Col span={24} style={{padding: '0 32px'}}>*/}
-                          {/*{searchBar}*/}
-                          {/*<Table*/}
-                            {/*columns={columns}*/}
-                            {/*dataSource={detailsData}*/}
-                            {/*pagination={pagination}*/}
-                            {/*onChange={this.handleTableChange}*/}
-                            {/*rowKey={record => record.key}*/}
-                            {/*loading={loading.table}*/}
-                            {/*size="middle"*/}
-                          {/*>*/}
-                          {/*</Table>*/}
-                        {/*</Col>*/}
+                        <Col span={24} style={{padding: '0 32px'}}>
+                          {searchBar}
+                          <Table
+                            columns={columns}
+                            dataSource={detailsData}
+                            pagination={pagination}
+                            onChange={this.handleTableChange}
+                            rowKey={record => record.key}
+                            loading={loading.table}
+                            size="middle"
+                          >
+                          </Table>
+                        </Col>
                       </Row>
                     </TabPane>
                   );

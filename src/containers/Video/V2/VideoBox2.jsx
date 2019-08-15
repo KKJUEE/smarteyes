@@ -26,7 +26,7 @@ class VideoBox2 extends React.Component {
     return (
       <Content className={styles.wrapper}>
         <Row gutter={16}>
-          <Col xl={9} lg={24} md={24} sm={24} xs={24}>
+          <Col xl={14} lg={24} md={24} sm={24} xs={24}>
             <div className={styles.cardTitle}>
               <div className={styles.cardText}>{zh_CN.ChannelTwo}</div>
             </div>
@@ -43,13 +43,13 @@ class VideoBox2 extends React.Component {
               />
             </div>
           </Col>
-          <Col xl={15} lg={24} md={24} sm={24} xs={24}>
+          <Col xl={10} lg={24} md={24} sm={24} xs={24}>
             <div className={styles.cardTitle}>
               <div className={styles.cardText}>{zh_CN.RealTimeFaultData}</div>
             </div>
             <div className={styles.cardContent}>
               <Row gutter={16}>
-                <Col span={12}>
+                <Col span={10}>
                   <table>
                     <thead>
                       <tr>

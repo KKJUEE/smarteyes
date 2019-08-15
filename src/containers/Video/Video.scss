@@ -1,57 +1,5 @@
 .charts {
-    float: right;
-}
-
-.camera {
-    float: right;
-}
-
-.cardTempalte {
-    float: left;
-    text-align: center;
-
-}
-
-.cardFirst {
-    margin: 75px 0 0 0;
-}
-.cardThird {
-
-}
-
-.cardFirstContent {
-    margin: 0 20px;
-    min-height: 656px;
-    padding: 20px;
-    border: 1px solid #2e2ef1;
-    color: #09aff1;
-    font-weight: 500;
-    font-size: 16px;
-    background: transparent;
-    border-radius: 2px 2px 0 0;
-    zoom: 1;
-}
-
-.cardThirdContent {
-    min-height: 618px;
-    padding: 20px;
-    border: 1px solid #2e2ef1;
-    color: #09aff1;
-    font-weight: 500;
-    font-size: 16px;
-    background: transparent;
-    border-radius: 2px 2px 0 0;
-    zoom: 1;
-    margin: 0 20px;
-}
-
-.wrapperAnalysis {
-    background: url(../../../src/components/backGround.png);
-    margin: 0 15px 60px;
-    //padding-top: 64px;
-    .tabs {
-        padding: 15px;
-    }
+    padding-top: 110px;
 }
 
 .wrapper {
@@ -80,14 +28,14 @@
         border: 1px solid #2e2ef1;
         background-color:transparent;
         height: 35vh;
-        min-height: 600px;
+        min-height: 560px;
         flex: 2;
         padding: 5px;
         .imgWap {
-            padding-bottom: 38%;
+            padding-bottom: 75%;
             padding-top: 5%;
             position: relative;
-            width: 49%;
+            width: 55%;
             height: auto;
             img {
                 object-fit: fill;
