@@ -56,7 +56,7 @@ class Donut extends React.Component {
                             position="right"
                             offsetY={-300 / 2 + 150}
                             offsetX={-45}
-                            textStyle={{fill:'white',fontSize:12}}
+                            textStyle={{fill:'white',fontSize:16}}
                         />
                         <Tooltip
                             showTitle={false}
@@ -113,7 +113,7 @@ class Donut extends React.Component {
                             position="right"
                             offsetY={-300 / 2 + 150}
                             offsetX={-45}
-                            textStyle={{fill:'white', fontSize:12}}
+                            textStyle={{fill:'white', fontSize:16}}
                         />
                         <Tooltip
                             showTitle={false}
@@ -143,7 +143,8 @@ class Donut extends React.Component {
                             ]}
                             style={{
                                 lineWidth: 1,
-                                stroke: "#fff"
+                                stroke: "#fff",
+                                fontSize: 16
                             }}
                         >
                             <Label

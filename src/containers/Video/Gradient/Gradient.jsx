@@ -122,13 +122,14 @@ class Gradient extends React.Component {
                 <div>
                     <Chart height={307} data={dv} scale={cols} forceFit className={styles.wrapper}>
                         <Legend 
-                            textStyle={{fill:'white',fontSize:12}}
+                            textStyle={{fill:'white',fontSize:16}}
                         />
                         <Axis name="Month"
                             label={{
                                 textStyle: {
                                     fontWeight: 200,
                                     fill: 'white',
+                                    fontSize: 20
                                 },
                             }}
                             line={{
@@ -150,6 +151,7 @@ class Gradient extends React.Component {
                                 textStyle: {
                                     fontWeight: 200,
                                     fill: 'white',
+                                    fontSize: 20
                                   },
                             }}
                             grid={{
@@ -168,12 +170,13 @@ class Gradient extends React.Component {
                                 lineDash: [2, 3],
                                 lineWidth: 1,
                                 stroke: 'rgba(255, 255, 255, 0.3)',
+                                fontSize: 20
                             }}
                         />
                         <Geom
                             type="line"
                             position="Month*num"
-                            size={2}
+                            size={4}
                             color={"city"}
                             shape={"smooth"}
                         />

@@ -37,7 +37,7 @@ class Map extends React.Component {
               textStyle: {
                 color: 'white',
                 fontWeight: 500,
-                fontSize: 16,
+                fontSize: 20,
             },
             },
             tooltip: {
@@ -50,7 +50,7 @@ class Map extends React.Component {
                 data:[zh_CN.ordinaryFactory, zh_CN.smartFactory],
                 textStyle: {
                     color: 'white',
-                    fontSize: 12,
+                    fontSize: 16,
                 },
             },
             // 左侧小导航图标
@@ -65,7 +65,7 @@ class Map extends React.Component {
                 calculable : true,
                 textStyle: {
                     color: 'white',
-                    fontSize: 12,
+                    fontSize: 16,
                 },
                 color: ['#e0ffff', '#006edd'],
             },

@@ -23,6 +23,7 @@ import { API_HISTORYERROR_TOTAL, API_HISTORYERROR_DETAILS } from '../../../const
 
 // css
 import styles from './FaultChart.scss';
+import {Switch,Route,NavLink,Redirect,withRouter} from  'react-router-dom'
 
 const FormItem = Form.Item;
 const Content = Layout;
@@ -30,6 +31,7 @@ const TabPane = Tabs.TabPane;
 const DataSet = require('@antv/data-set');
 const { RangePicker } = DatePicker;
 const { Option } = Select;
+
 
 // 画面故障类型集合
 const errorTypes = [{
@@ -74,6 +76,7 @@ class FaultChart extends React.Component {
         camId: 2, title: zh_CN.video2,
       }],                            
       currentCamId: 1,                           // 当前 tab 选中的 camId
+      componentSize: 'large'
     };
   }
 
@@ -353,6 +356,7 @@ class FaultChart extends React.Component {
           showTime={{format:"HH:mm:ss"}}
           format="YYYY-MM-DD HH:mm:ss"
           allowClear={false}
+          size={this.state.componentSize}
         />
       </div>
     );
@@ -394,19 +398,21 @@ class FaultChart extends React.Component {
     const searchBar = (
       <Row className={styles.searchBar}>
         <Col>
-          <Button type="primary" icon="search" className={styles.searchBtn}
+          <Button type="primary" icon="search" className={styles.searchBtn} size={this.state.componentSize}
             onClick={() => this.search()}>{zh_CN.search}</Button>
           <RangePicker 
             locale={locale}
-            value={tmpSearchs.time} 
+            value={tmpSearchs.time}
+
             onChange={this.changeSearchTime}
             className={styles.picker}
             showTime={{format:"HH:mm:ss"}}
             format="YYYY-MM-DD HH:mm:ss"
             className={styles.rangePicker}
             allowClear={false}
+            size={this.state.componentSize}
           />
-          <Select defaultValue={tmpSearchs.errorType} className={styles.select}
+          <Select defaultValue={tmpSearchs.errorType} className={styles.select} size={this.state.componentSize}
             onChange={this.changeSearchErrorType.bind(this)}>
             {errorTypes.map((item) => {
               return <Option value={item.key}>{item.text}</Option>
@@ -430,6 +436,8 @@ class FaultChart extends React.Component {
     };
 
     return (
+
+
       <div className={styles.mainBody}>
         <div className={styles.mainCard}>
           <Row gutter={16}>
@@ -444,15 +452,16 @@ class FaultChart extends React.Component {
                       <Row gutter={16}>
                         <Col span={24} style={{padding: '0 32px'}}>
                           <Spin spinning={loading.chart}>
-                            <Chart height={600} data={data} forceFit scale={scale}>
+                            <Chart height={580} data={data} forceFit scale={scale}>
                               <Legend
-                                textStyle={{ fill: 'white', fontSize: 12 }}
+                                textStyle={{ fill: 'white', fontSize: 24 }}
                               />
                               <Axis name="date"
                                 label={{
                                   textStyle: {
                                     fontWeight: 200,
                                     fill: 'white',
+                                    fontSize: 24,
                                   },
                                 }}
                                 line={{
@@ -473,6 +482,7 @@ class FaultChart extends React.Component {
                                   textStyle: {
                                     fontWeight: 200,
                                     fill: 'white',
+                                    fontSize: 24
                                   },
                                 }}
                                 grid={{
@@ -491,6 +501,7 @@ class FaultChart extends React.Component {
                                   lineDash: [2, 3],
                                   lineWidth: 1,
                                   stroke: 'rgba(255, 255, 255, 0.3)',
+                                  fontSize: 24
                                 }}
                               />
                               <Geom

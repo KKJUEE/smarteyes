@@ -10,6 +10,7 @@ import FaultChart from './components/FaultChart';
 
 // css
 import styles from './Analysis.scss';
+import FootMenu from "../../components/Foot/FootMenu";
 
 const Content = Layout;
 
@@ -34,7 +35,7 @@ class Analysis extends React.Component {
         <Content className={styles.wrapper}>
           <FaultChart />
         </Content>
-        <Foot />
+          <FootMenu />
       </div>
     )
   }

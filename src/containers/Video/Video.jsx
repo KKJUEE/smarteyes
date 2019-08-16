@@ -16,8 +16,12 @@ import { clearTimer, getChannelList } from '../../actions/apps'
 import { Col, Row } from 'antd';
 import { API_HISTORYERROR_STATISTIC_PERIOD } from '../../constants/API'
 import zh_CN from '../../i18n/zh_CN'
+import {Switch,Route,NavLink,Redirect,withRouter} from  'react-router-dom'
+
 // css
 import styles from './Video.scss'
+import imgURL1 from './5.png';
+import FootMenu from "../../components/Foot/FootMenu";
 
 class Video extends React.Component {
   constructor(props) {
@@ -284,7 +288,7 @@ class Video extends React.Component {
             <Map />
           </Col>
         </Row>
-        <Foot />
+        <FootMenu />
       </div>
     )
   }

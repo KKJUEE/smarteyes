@@ -1,0 +1,89 @@
+.stContainer {
+  //position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  font-family: 'Josefin Slab', 'Myriad Pro', Arial, sans-serif;
+}
+
+.stContainer > input,
+.stContainer > a {
+  position: fixed;
+  bottom: 0px;
+  width: 20%;
+  cursor: pointer;
+  font-size: 30px;
+  height: 60px;
+  line-height: 60px;
+}
+
+.stContainer > input {
+  opacity: 0;
+  z-index: 1000;
+}
+
+.stContainer > a {
+  z-index: 10;
+  font-weight: 700;
+  background: #031a58;
+  color: #a2d5e4;
+  text-align: center;
+  text-shadow: 1px 1px 1px rgb(3, 24, 80);
+}
+
+/* "Fix" for percentage rounding: add a background bar pseudo element with the same color like the labels */
+.stContainer:before {
+  content: '';
+  position: fixed;
+  width: 100%;
+  height: 60px;
+  background: #031a58;
+  z-index: 9;
+  bottom: 0;
+}
+
+.stControl1, .stControl1 + a {
+  left: 0;
+}
+
+.stControl2, .stControl2 + a {
+  left: 20%;
+}
+
+.stContainer > input:checked + a,
+.stContainer > input:checked:hover + a{
+  background: #0b4087;
+}
+
+.stContainer > input:checked + a:after,
+.stContainer > input:checked:hover + a:after{
+  bottom: 100%;
+  border: solid transparent;
+  content: '';
+  height: 0;
+  width: 0;
+  position: absolute;
+  pointer-events: none;
+  border-bottom-color: #0b4087;
+  border-width: 20px;
+  left: 50%;
+  margin-left: -20px;
+}
+
+.stContainer > input:hover + a{
+  background: #0b4087;
+}
+
+.stContainer > input:hover + a:after {
+  height: 45rem;
+}
+
+//增加点击范围，大概扩展了两个单位
+.stContainer > input:before {
+  content: "";
+  display: inline-block;
+  height : 50rem;
+  width: 32rem;
+  margin: -100px 0 0 0 ;
+}

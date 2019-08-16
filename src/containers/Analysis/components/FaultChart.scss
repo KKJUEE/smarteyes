@@ -6,6 +6,7 @@
       .extraWrap {
         line-height: 60px;
         padding-right: 24px;
+        font-size: 24px;
         .opt {
           display: inline-block;
           margin-right: 24px;
@@ -34,7 +35,8 @@
         .label {
           display: block;
           height: 32px; 
-          line-height: 32px; 
+          line-height: 32px;
+          font-size: 16px;
           float: right;
         }
         .select {
@@ -77,6 +79,17 @@
 .mainBody :global(.ant-tabs .ant-tabs-large-bar .ant-tabs-tab:hover) {
   color: #09aff1;
 }
+.mainBody :global(.ant-table ) {
+  font-size: 24px;
+}
+.mainBody :global(.ant-pagination ) {
+  font-size: 24px;
+}
+.mainBody :global(.ant-tabs-nav-container ) {
+  font-size: 24px !important;
+}
+
+
 .mainBody :global(.ant-table-thead > tr ) {
   background: none;
 }
@@ -397,3 +410,4 @@ body :global(.ant-calendar-decade-panel) {
 body :global(.ant-select-dropdown-menu-item-selected) {
   background-color: #1890ff;
 }
+
