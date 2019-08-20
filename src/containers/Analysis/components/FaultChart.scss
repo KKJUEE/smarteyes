@@ -19,7 +19,7 @@
           }
         }
         .picker {
-          width: 256px;
+          width: 400px !important;
         }
       }
       .searchBar {
@@ -31,6 +31,7 @@
         .rangePicker {
           float: right; 
           margin-right: 24px;
+          width: 400px !important;
         }
         .label {
           display: block;

@@ -20,7 +20,7 @@ import {Switch,Route,NavLink,Redirect,withRouter} from  'react-router-dom'
 
 // css
 import styles from './Video.scss'
-import imgURL1 from './5.png';
+// import imgURL1 from './5.png';
 import FootMenu from "../../components/Foot/FootMenu";
 
 class Video extends React.Component {
@@ -281,6 +281,7 @@ class Video extends React.Component {
           <Col xl={16} lg={24} md={24} sm={24} xs={24}>
             <VideoBox1 videoBox1Data={this.state.box1} />
             <VideoBox2 videoBox2Data={this.state.box2} />
+            {/*<VideoBox2 videoBox2Data={this.state.box2} />*/}
           </Col>
           <Col xl={8} lg={24} md={24} sm={24} xs={24} className={styles.charts}>
             <Donut data={chart} />

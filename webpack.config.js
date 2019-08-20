@@ -2,7 +2,13 @@ const path = require('path');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 
 const ProxyConfig = {
-  target: 'ws://127.0.0.1:8082', //http://127.0.0.1:8082
+  target: 'http://192.168.137.135:8888', //http://127.0.0.1:8082
+  changeOrigin: true,
+  secure: false,
+}
+
+const ProxyConfigImg = {
+  target: 'http://192.168.137.135:8889', //http://127.0.0.1:8082
   changeOrigin: true,
   secure: false,
 }
@@ -100,7 +106,7 @@ module.exports = {
       '/stream': ProxyConfig,
       '/HistoryError': ProxyConfig,
       '/HistoryErrorDetails': ProxyConfig,
-      '/img': ProxyConfig,
+      '/img': ProxyConfigImg,
     },
   },
 }

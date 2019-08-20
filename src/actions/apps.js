@@ -32,13 +32,16 @@ const getChannelList = () => {
   return async (dispatch) => {
     try {
       source.addEventListener('greeting', e => {
-        let data = JSON.parse(e.data);
-        data.message.img = hp.concat(data.message.img);
-        console.log(`data: ${data.message}`);
-        dispatch({
-          type: types.CHANNEL,
-          payload: data.message
-        })
+        // setTimeout(function () {
+          let data = JSON.parse(e.data);
+          data.message.img = hp.concat("img/" + data.message.img);
+          console.log(`data: ${data.message}`);
+          dispatch({
+            type: types.CHANNEL,
+            payload: data.message
+          })
+        // }, 3000)
+
       }, false);
     } catch (e) {
       console.error(e)
