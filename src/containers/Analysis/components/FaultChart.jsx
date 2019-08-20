@@ -75,7 +75,7 @@ class FaultChart extends React.Component {
       }, {
         camId: 2, title: zh_CN.video2,
       }],                            
-      currentCamId: 1,                           // 当前 tab 选中的 camId
+      currentCamId: 2,                           // 当前 tab 选中的 camId
       componentSize: 'large'
     };
   }
