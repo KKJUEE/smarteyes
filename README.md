@@ -1,5 +1,5 @@
 # smarteyes
-lenovo smarteyes's project
+lenovo smarteyes project
 
 # build
 
