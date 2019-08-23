@@ -21,7 +21,7 @@ class VideoBox2 extends React.Component {
         url = url.substring(0, url.indexOf(window.location.port) - 1);
       }
     }
-    let player2 = 'rtmp://' + '192.168.137.135' + ':' + '1935' + '/live/stream4';
+    let player2 = 'rtmp://' + '192.168.10.100' + ':' + '1935' + '/live/stream4';
     console.log('player1 url', player2)
     this.state = {
       player2: player2,
