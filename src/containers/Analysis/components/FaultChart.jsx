@@ -390,7 +390,7 @@ class FaultChart extends React.Component {
       title: zh_CN.operation,
       key: 'action',
       render: (text, record) => (
-        <span><a href={record.Img} target={'_blank'}>{zh_CN.viewAbnormalPicture}</a></span>
+        <span><a href={'http://192.168.10.100:8889/img/' + record.Img} target={'_blank'}>{zh_CN.viewAbnormalPicture}</a></span>
       ),
     }];
 
