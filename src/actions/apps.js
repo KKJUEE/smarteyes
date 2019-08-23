@@ -34,7 +34,7 @@ const getChannelList = () => {
       source.addEventListener('greeting', e => {
         // setTimeout(function () {
           let data = JSON.parse(e.data);
-          data.message.img = hp.concat("img/" + data.message.img);
+          // data.message.img = hp.concat("img/" + data.message.img);
           console.log(`data: ${data.message}`);
           dispatch({
             type: types.CHANNEL,
