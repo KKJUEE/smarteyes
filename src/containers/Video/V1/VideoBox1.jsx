@@ -45,8 +45,8 @@ class VideoBox1 extends React.Component {
     let originImg = this.props.videoBox1Data.img;
     let host = window.location.host;
     let urlIndex = originImg.indexOf(host);
-    const videoImg = "http://192.168.10.100:8889/img/" + originImg.substr(urlIndex + host.length + 1);
-
+    const videoImg = "http://192.168.10.100:8889/" + originImg.substr(urlIndex + host.length + 1);
+    // const videoImg = "http://192.168.10.100:8889/img/" + originImg;
     return (
       <Content className={styles.wrapper} style={{ paddingTop: 75, paddingBottom: 15 }}>
         <Row gutter={16}>

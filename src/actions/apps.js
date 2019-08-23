@@ -23,7 +23,7 @@ const getChannelList = () => {
     if (e.target.readyState === EventSource.CLOSED) {
       console.log('Disconnected');
       // 断连1秒钟后再次发起请求
-      timer['sse'] = setTimeout(getChannelList, 1000);
+      // timer['sse'] = setTimeout(getChannelList, 1000);
     } else if (e.target.readyState === EventSource.CONNECTING) {
       console.log('Connecting...');
     }
